@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RestControllerClass {
 
+	private static final Logger logger = LoggerFactory.getLogger(RestControllerClass.class);
+	final String null;
 	@GetMapping("/map")
 	public ResponseEntity<String> getString(){
 		return new ResponseEntity<>("First App", HttpStatus.OK);
