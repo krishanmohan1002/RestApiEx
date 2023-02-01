@@ -10,4 +10,9 @@ public class RahulBorabandaRestApiCrudExOld1Application {
 		SpringApplication.run(RahulBorabandaRestApiCrudExOld1Application.class, args);
 	}
 
+	@Configuration
+	public ModelMapper(){
+	  return new ModelMapper();
+	}
+
 }
